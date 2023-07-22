@@ -41,7 +41,7 @@ dependencies:
   - pyproj
   - flake8
   - pytest
-  - pytorch-gpu
+  - pytorch
   - scikit-learn
   - scikit-image
   - xorg-libsm
