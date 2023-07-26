@@ -28,12 +28,7 @@ For details, see `Project History`_.
 
 This repository contains the algorithms to solve the CORE3D problem, but a
 web-based user interface and cloud-based processing infrastructure are provided
-in the `girder/Danesfield repo <https://github.com/girder/Danesfield>`_.
-Additionally, an older version of the web app may be found at 
-`Kitware/Danesfield-App <https://github.com/Kitware/Danesfield-App>`_.
-The algorithms in this repository
-are written in Python or provide a Python interface.
-
+in the `takinekotfs/DanesfieldGUI repo <https://github.com/takinekotfs/DanesfieldGUI>`_.
 
 Getting Started
 ===============
@@ -70,8 +65,8 @@ Docker image
 
 This repository has also been built into a Docker image, which
 includes the required conda environment.  The image is available from
-Docker Hub at `<https://hub.docker.com/r/kitware/danesfield>`_ and can
-be pulled down by running ``docker pull kitware/danesfield``.  The
+Docker Hub at `<https://hub.docker.com/r/systakineko/danesfield>`_ and can
+be pulled down by running ``docker pull systakineko/danesfield``.  The
 image was built using the Dockerfile included in this repository.
 
 As some of the Danesfield algorithms require a GPU, you'll need to
@@ -194,9 +189,3 @@ cloud from aerial video sources.
 Third, we are adding open source tools to convert the meshes produced by
 Danesfield into the `3D Tiles <https://www.ogc.org/standards/3DTiles/>`_
 format for more efficient transmission over the web.
-
-
-.. _EarthVision: http://www.classic.grss-ieee.org/earthvision2019/
-.. _EarthVisionPaper: http://openaccess.thecvf.com/content_CVPRW_2019/html/EarthVision/Leotta_Urban_Semantic_3D_Reconstruction_From_Multiview_Satellite_Imagery_CVPRW_2019_paper.html
-__ EarthVisionPaper_
-.. _VisSat: https://github.com/Kai-46/VisSatSatelliteStereo
