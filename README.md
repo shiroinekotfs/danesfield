@@ -20,7 +20,7 @@ This repository contains the algorithms to solve the CORE3D problem, but a web-b
 Clone this repository with its sub-modules by running:
 
 ```
-git clone --recursive git@github.com:Kitware/Danesfield.git
+git clone --recursive git@github.com:takinekotfs/Danesfield.git
 ```
 
 To fetch the latest version of this repository and its sub-modules, run:
@@ -55,7 +55,7 @@ If running via the docker container, first ensure you have the latest Danesfield
 
 ```
 nvidia-docker run -it --rm --gpus all --shm-size 8G\
- -v /$DATA:/mnt kitware/danesfield /bin/bash
+ -v /$DATA:/mnt takinekotfs/danesfield /bin/bash
 ```
 
 where  `$DATA`  is a path on the host to the data directory containing your input imagery or point cloud and input.ini. This host directory is mounted inside the container at  `/mnt`  in the above command.
@@ -63,7 +63,7 @@ where  `$DATA`  is a path on the host to the data directory containing your inpu
 Once the environment is set up, you can execute a pipeline to process either multiple satellite images or start with a geospatial point cloud. To execute a pipeline with a point cloud, run
 
 ```
-docker run --rm --gpus all -it -v ~/projects/danesfield:/root/danesfield -v ~/data/run_danesfield/:/root/run_danesfield kitware/danesfield 'LOGLEVEL=DEBUG python /root/danesfield//danesfield/tools/run_danesfield.py /root/run_danesfield/wrk/input.ini' > output_pointcloud.txt 2>&1
+docker run --rm --gpus all -it -v ~/projects/danesfield:/root/danesfield -v ~/data/run_danesfield/:/root/run_danesfield takinekotfs/danesfield 'LOGLEVEL=DEBUG python /root/danesfield//danesfield/tools/run_danesfield.py /root/run_danesfield/wrk/input.ini' > output_pointcloud.txt 2>&1
 ```
 
 Note:  [input.ini](https://github.com/takinekotfs/danesfield/blob/master/input.ini)  should contain a valid point cloud path via  `p3d_fpath`.
@@ -71,7 +71,7 @@ Note:  [input.ini](https://github.com/takinekotfs/danesfield/blob/master/input.i
 To execute a pipeline with a set of satellite images, run
 
 ```
-docker run --rm --gpus all -it -v ~/projects/danesfield:/root/danesfield -v ~/data/run_danesfield/:/root/run_danesfield kitware/danesfield 'LOGLEVEL=DEBUG python /root/danesfield/danesfield/tools/run_danesfield.py --image /root/run_danesfield/imageful/imageful.ini' >> output_image.txt 2>&1
+docker run --rm --gpus all -it -v ~/projects/danesfield:/root/danesfield -v ~/data/run_danesfield/:/root/run_danesfield takinekotfs/danesfield 'LOGLEVEL=DEBUG python /root/danesfield/danesfield/tools/run_danesfield.py --image /root/run_danesfield/imageful/imageful.ini' >> output_image.txt 2>&1
 ```
 
 Note:  [input.ini](https://github.com/takinekotfs/danesfield/blob/master/input.ini)  should contain a valid path to imagery via  `imagery_dir`.
