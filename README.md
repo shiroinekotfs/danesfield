@@ -5,13 +5,13 @@ This repository addresses the algorithmic challenges of the IARPA CORE3D program
 
 ![The Danesfield system performs 3D reconstruction from satellite imagery](https://github.com/takinekotfs/danesfield/raw/master/danesfield_system_graphic.png)
 
-This software is designed to process multiple-view satellite imagery and is currently configured to process collections of panchromatic and multispectral WorldView3 imagery such as the examples provided in the public  [CORE3D Dataset](https://spacenet.ai/core3d/). The algorithms were described in a  **Best Paper**  awarding winning paper at  [EarthVision_](https://github.com/takinekotfs/danesfield#id7)  2019:
+This software is designed to process multiple-view satellite imagery and is currently configured to process collections of panchromatic and multispectral WorldView3 imagery such as the examples provided in the public  [CORE3D Dataset](https://spacenet.ai/core3d/). The algorithms were described in a  **Best Paper**  awarding winning paper at [EarthVision_](https://github.com/takinekotfs/danesfield#id7)  2019:
 
 > M. Leotta, C. Long, B. Jacquet, M. Zins, D. Lipsa, J. Shan, B. Xu, Z. Li, X. Zhang, S. Chang, M. Purri, J. Xue, and K. Dana, "[`Urban Semantic 3D Reconstruction From Multiview Satellite Imagery`__](https://github.com/takinekotfs/danesfield#id5)," in The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops: EarthVision, 2019.
 
 The Danesfield project has evolved since this publication. For details, see  [Project History](https://github.com/takinekotfs/danesfield#project-history).
 
-This repository contains the algorithms to solve the CORE3D problem, but a web-based user interface and cloud-based processing infrastructure are provided in the  [takinekotfs/DanesfieldGUI repo](https://github.com/takinekotfs/DanesfieldGUI).
+This repository contains the algorithms to solve the CORE3D problem, but a web-based user interface and cloud-based processing infrastructure are provided in the  [takinekotfs/DanesfieldApp repo](https://github.com/takinekotfs/DanesfieldApp).
 
 ## Getting Started
 
