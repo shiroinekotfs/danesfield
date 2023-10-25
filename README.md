@@ -36,7 +36,7 @@ The first step in running or developing Danesfield code is to obtain the correct
 
 ### [](https://github.com/shiroinekotfs/danesfield#docker-image)Docker image
 
-This repository has also been built into a Docker image, which includes the required conda environment. The image is available from Docker Hub at  [https://hub.docker.com/r/sysshiroineko/danesfield](https://hub.docker.com/r/sysshiroineko/danesfield)  and can be pulled down by running  `docker pull sysshiroineko/danesfield`. The image was built using the Dockerfile included in this repository.
+This repository has also been built into a Docker image, which includes the required conda environment. The image is available from Docker Hub at  [https://hub.docker.com/r/shiroinekotfs/danesfield](https://hub.docker.com/r/shiroinekotfs/danesfield)  and can be pulled down by running  `docker pull shiroinekotfs/danesfield`. The image was built using the Dockerfile included in this repository.
 
 As some of the Danesfield algorithms require a GPU, you'll need to have  [NVIDIA Docker](https://github.com/NVIDIA/nvidia-docker)  installed, and use the  `nvidia-docker`  command when running the image.
 
